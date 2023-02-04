@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/cors-proxy/*"
-  to = ":splat"
+  from = "/reactful/*"
+  to = "https://visitor.reactful.com/:splat"
   status = 200
   force = true
 
