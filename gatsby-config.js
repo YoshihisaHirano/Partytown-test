@@ -4,7 +4,17 @@
 module.exports = {
   siteMetadata: {
     title: `Test`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-google-gtag"]
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-B6SXD335KF"],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+  ],
 };
