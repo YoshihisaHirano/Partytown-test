@@ -4,12 +4,12 @@ import { Partytown } from "@builder.io/partytown/react";
 export const onRenderBody = ({ setHeadComponents }) => {
   const resolveUrl = (url, location, type) => {
     const baseUrl = new URL(
-      "https://main--flourishing-brigadeiros-99374f.netlify.app/reactful/"
+      "https://main--flourishing-brigadeiros-99374f.netlify.app/"
     );
     if (type === "script") {
       const proxyUrl = new URL(baseUrl);
     //   console.log(proxyUrl);
-      proxyUrl.searchParams.append('url', url.href);
+      proxyUrl.searchParams.append('url', '/reactful/'.concat(url.href));
       return proxyUrl;
     }
     return url;
