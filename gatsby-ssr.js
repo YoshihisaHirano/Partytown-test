@@ -8,6 +8,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     );
     if (type === "script") {
       const proxyUrl = new URL(url, baseUrl);
+      console.log(proxyUrl);
     //   proxyUrl.searchParams.append('url', url.href);
       return proxyUrl;
     }

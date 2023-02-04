@@ -124,6 +124,10 @@ const links = [
 ]
 
 const IndexPage = () => {
+  React.useEffect(() => {
+    const url = "https://www.theverge.com/2020/12/13/22172610/oracle-moves-headquarters-california-texas-hewlett-packard-tesla"
+    fetch(`/cors-proxy/${url}`).then(res => res.text()).then(console.log);
+  })
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
