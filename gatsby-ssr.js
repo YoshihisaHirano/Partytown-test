@@ -17,7 +17,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <Partytown
       key="partytown"
-      resolveUrl={resolveUrl}
+      // resolveUrl={resolveUrl}
       forward={["window.dataLayer.push"]}
     />,
     // <script
@@ -35,7 +35,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     //     `,
     //   }}
     // ></script>,
-    <script type="text/partytown" key="hopefully-cors" src="https://visitor.reactful.com/dist/main.rtfl.js"></script>,
-    // <script type="text/partytown" key="hopefully-cors-2" src="https://www.google-analytics.com/dist/analytics.js"></script>
+    <script type="text/partytown" key="hopefully-cors" src="/reactful/dist/main.rtfl.js"></script>,
+    <script type="text/partytown" key="hopefully-cors-2" src="/analytics/dist/analytics.js"></script>
   ]);
 };

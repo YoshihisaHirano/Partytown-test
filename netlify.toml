@@ -5,6 +5,12 @@
   force = true
 
 [[redirects]]
+  from = "/analytics/*"
+  to = "https://www.google-analytics.com/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/pug"
   to = "/"
   status = 200
